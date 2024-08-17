@@ -1,0 +1,193 @@
+/* color and font-size defining */
+
+:root {
+    --text_black_color: #252B42;
+    --text_grey_color: #737373;
+    --blue_color: #00A0C1;
+    --yellow_color: #FFA62B;
+    --light_blue_color: #8EC2F2;
+    --desc_font_size: 14px;
+    --title_font_size: 40px;
+}
+
+/* activating Monsterrat font family */
+
+@font-face {
+    font-family: 'Montserrat_medium';
+    src: url('../fonts/Montserrat-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat_semibold';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat_bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat_extrabold';
+    src: url('../fonts/Montserrat-ExtraBold.ttf');
+    font-style: normal;
+    font-weight: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.welcome_sec {
+    height: 82vh;
+    background-image: url(../img/desktop_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* header styling */
+
+
+.container {
+    width: calc(1440px - 195px * 2);
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 171px;
+}
+
+nav.header_menu {
+    width: 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .7s ease-in;
+}
+
+.header_menu_list {
+    list-style: none;
+    width: 18vw;
+    align-items: center;
+    display: none;
+}
+
+.header_menu_item {
+    font-size: var(--desc_font_size);
+}
+
+.header_menu_item a {
+    color: var(--text_grey_color);
+    text-decoration: none;
+    font-family: 'Montserrat_semibold', sans-serif;
+}
+
+.header_navbar_btns {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.header_navbar_btns:hover {
+    cursor: pointer;
+}
+
+.header_navbar_btns span {
+    display: block;
+    width: 15px;
+    height: 3px;
+    background-color: var(--text_grey_color);
+}
+
+.header_navbar_btns span:nth-child(2n) {
+    margin-left: auto;
+    width: 13px;
+}
+.header_navbar_btns span:last-child {
+    margin-left: auto;
+    width: 10px;
+}
+
+.header_icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 2.7vw;
+    justify-content: space-between;
+}
+
+.header_icons a {
+    display: flex;
+    align-items: center;
+}
+
+/* welcome page info styling */
+
+.welcome_sec_info>h1 {
+    font-size: 58px;
+    color: var(--text_black_color);
+    font-family: 'Montserrat_extrabold', sans-serif;
+}
+
+.welcome_sec_info>p {
+    font-family: 'Montserrat_medium', sans-serif;
+    color: var(--text_grey_color);
+}
+
+.welcome_sec_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 31vh;
+}
+
+.welcome_sec_btns button {
+    width: 185px;
+    height: 48px;
+    border-radius: 37px;
+    border: 2px solid var(--blue_color);
+    color: var(--blue_color);
+    font-family: 'Montserrat_bold', sans-serif;
+    font-size: var(--desc_font_size);
+    background-color: transparent;
+}
+.welcome_sec_btns button:first-child {
+    background-color: var(--blue_color);
+    color: white;
+}
+.welcome_sec_btns button:last-child:hover {
+    background-color: var(--blue_color);
+    color: black;
+}
+
+
+#welcome_page_woman {
+    position: absolute;
+    top: 104px;
+    right: 51px;
+}
+
+.welcome_sec_btns button:hover {
+        transition: .3s;
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+        
+}
