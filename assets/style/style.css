@@ -50,20 +50,27 @@ a:hover {
     cursor: pointer;
 }
 
-.welcome_sec {
-    height: 82vh;
-    background-image: url(../img/desktop_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* header styling */
-
+/* creating container for the reason of margins */
 
 .container {
     width: calc(1440px - 195px * 2);
     margin: 0 auto;
 }
+
+/* welcome page styling */
+
+.welcome_sec {
+    height: 82vh;
+    background-image: url(../img/desktop_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+/* header styling */
+
+
 
 header {
     display: flex;
@@ -72,6 +79,8 @@ header {
     padding-top: 36px;
     padding-bottom: 171px;
 }
+
+/* dropdown menu in header styling */
 
 nav.header_menu {
     width: 7vw;
@@ -120,6 +129,7 @@ nav.header_menu {
     margin-left: auto;
     width: 13px;
 }
+
 .header_navbar_btns span:last-child {
     margin-left: auto;
     width: 10px;
@@ -168,15 +178,18 @@ nav.header_menu {
     font-size: var(--desc_font_size);
     background-color: transparent;
 }
+
 .welcome_sec_btns button:first-child {
     background-color: var(--blue_color);
     color: white;
 }
+
 .welcome_sec_btns button:last-child:hover {
     background-color: var(--blue_color);
     color: black;
 }
 
+/* absolute positioning because pic doesn't fit in the container */
 
 #welcome_page_woman {
     position: absolute;
@@ -185,9 +198,121 @@ nav.header_menu {
 }
 
 .welcome_sec_btns button:hover {
-        transition: .3s;
-        cursor: pointer;
-        background-color: transparent;
-        color: black;
-        
+    transition: .3s;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+}
+
+/* why choose us section styling */
+
+.why_choose>.container>h2 {
+    font-family: "Montserrat_bold", sans-serif;
+    font-size: var(--title_font_size);
+    color: var(--text_black_color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.why_choose>.container>p {
+    font-family: "Montserrat_medium", sans-serif;
+    font-size: var(--desc_font_size);
+    color: var(--text_grey_color);
+    width: 21vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.why_choose_reasons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 225px;
+}
+
+.why_choose_reasons_item {
+    height: 14vh;
+    text-align: center;
+    width: 14vw;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+.why_choose_reasons_item img {
+    padding-bottom: 10px;
+}
+
+.why_choose_reasons_item:nth-child(2n) {
+    background-color: var(--blue_color);
+}
+
+.why_choose_reasons_item p {
+    font-family: "Montserrat_bold", sans-serif;
+    font-size: 16px;
+    color: var(--text_black_color);
+}
+
+#dig_mark {
+    color: white;
+}
+
+/* practice_advice section styling */
+
+.practic_advices {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.practice_advice>.container>h2 {
+    font-family: "Montserrat_bold", sans-serif;
+    font-size: var(--title_font_size);
+    color: var(--text_black_color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.advice_container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 9vw;
+}
+
+.advice_container p {
+    padding-left: 30px;
+}
+
+.practice_advice>.container>p {
+    font-family: "Montserrat_medium", sans-serif;
+    font-size: var(--desc_font_size);
+    color: var(--text_grey_color);
+    width: 21vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.advice_container p:first-child {
+    color: var(--text_black_color);
+    font-family: "Montserrat_bold", sans-serif;
+    font-size: 16px;
+    padding-bottom: 16px;
+}
+
+.advice_container p:nth-child(2n) {
+    font-family: "Montserrat_medium", sans-serif;
+    font-size: var(--desc_font_size);
+    color: var(--text_grey_color);
+    padding-bottom: 10px;
+    line-height: 20px;
+    /* width: 85%; */
+}
+
+.advice_container img {
+    width: 230px;
 }
